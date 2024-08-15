@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #151128;
+}
+section {
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #211c39;
+}
+.container {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+.xfloat {
+  float: right;
+  cursor: pointer;
+}
+.align {
+  float: 1;
+}
+.text {
+  /* border: 1px solid; */
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  flex: 1;
+}
+.down {
+  margin-top: 3rem;
+}
+.data-text p {
+  max-width: 230px;
+}
+.cardicon {
+  transition: all 0.3s;
+  display: flex;
+  gap: 9px;
+  background-color: rgb(219, 231, 231);
+  padding: 20px;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+}
+i {
+  cursor: pointer;
+}
+.data-text {
+  margin-top: 5px;
+}
+/*  */
+.phonenew {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  width: fit-content;
+  border-radius: 5px;
+}
+.phonenew p {
+  max-width: 200px;
+}
+.card {
+  display: flex;
+  gap: 60px;
+  padding: 30px;
+}
+.phonenew img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
+.phonenewsdata {
+  padding: 40px 10px;
+}
+.phonenewsdata p {
+  margin-top: 10px;
+}
+.circle {
+  border: 5px solid gray;
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  text-align: center;
+}
+@media (max-width: 1011px) {
+  .card {
+    flex-direction: column;
+  }
+  section {
+    padding: 10px;
+  }
+}
+@media (max-width: 665px) {
+  .text {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
