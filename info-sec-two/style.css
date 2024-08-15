@@ -95,6 +95,10 @@ i {
   text-align: center;
   text-align: center;
 }
+.hiddenctn {
+  color: white;
+  display: none;
+}
 @media (max-width: 1011px) {
   .card {
     flex-direction: column;
