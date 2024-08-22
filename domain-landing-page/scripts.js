@@ -1,3 +1,12 @@
-// https://www.pexels.com/video/the-sun-illuminating-earth-s-surface-1851190/
+const sign = document.querySelector(".signIN");
+const hiddenctn = document.querySelector(".secondhidden");
 
-https: console.log("be right back");
+sign.addEventListener("click", () => {
+  hiddenctn.classList.toggle("secondhidden");
+
+  if (hiddenctn.classList.contains("secondhidden")) {
+    sign.innerHTML = `Sign in <i class="fa-solid fa-chevron-down"></i>`;
+  } else {
+    sign.innerHTML = `Sign in <i class="fa-solid fa-chevron-up"></i>`;
+  }
+});

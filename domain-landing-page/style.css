@@ -24,7 +24,6 @@ body {
   background-color: black;
   color: white;
   padding: 25px;
-  border-top-right-radius: 5px;
   cursor: pointer;
 }
 nav {
@@ -42,6 +41,9 @@ nav {
   padding: 50px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.secondhidden {
+  display: none;
 }
 .registered p,
 .newcustomers p {
@@ -68,8 +70,12 @@ section {
   width: 100%;
   position: relative;
   background-image: url("https://images.unsplash.com/photo-1724268508231-451abbb9e4b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
   object-fit: cover;
   background-size: cover;
+}
+#myVideo {
+  width: 100%;
 }
 .sectionData {
   display: flex;
@@ -136,13 +142,21 @@ input {
 .hidden {
   visibility: hidden;
 }
+
 /*  */
-@media (max-width: 699px) {
-  .navlink {
+
+@media (max-width: 1099px) {
+  .newcustomers {
     display: none;
   }
   .hiddenLogin {
     flex-direction: column;
-    gap: 0;
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+@media (max-width: 699px) {
+  .navlink {
+    display: none;
   }
 }
