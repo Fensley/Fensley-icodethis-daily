@@ -1,0 +1,137 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262e36;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10px;
+}
+.container {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.longpara {
+  max-width: 400px;
+  line-break: wrap;
+  color: rgb(204, 198, 198);
+  margin-bottom: 25px;
+}
+.visited {
+  color: rgb(221, 214, 214);
+}
+.ctn-one {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  gap: 80px;
+  display: flex;
+  background-color: #8fb9eb;
+  padding: 30px 40px;
+  align-items: center;
+}
+.ctntwoo {
+  background: url("https://images.unsplash.com/photo-1469826834904-e92950ee5bf9?q=80&w=2896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  height: 200px;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.ctntwoo p {
+  position: relative;
+  bottom: 20px;
+  right: 23px;
+  background-color: rgba(192, 192, 192, 0.3);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.ctnthree {
+  background-color: #29313c;
+  padding: 20px 40px;
+}
+.halea {
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: rgb(216, 212, 212);
+}
+.shield {
+  font-size: 13px;
+  color: gray;
+}
+.ctnfour {
+  padding: 20px 40px;
+  background-color: #323846;
+}
+.last {
+  padding: 20px 40px;
+  background-color: #323846;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.last button {
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #92bcf0;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  transition: all 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.sez {
+  color: #8fb9eb;
+}
+.fouthdata {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 20px;
+}
+.imgdata {
+  display: flex;
+  gap: -200px;
+}
+.imgdata img {
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  transition: all 0.5s;
+  &:hover {
+    padding: 8px;
+  }
+}
+.imgg {
+  margin-left: -15px;
+}
+i {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  body {
+    height: fit-content;
+  }
+}
