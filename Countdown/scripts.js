@@ -1,14 +1,31 @@
 const month = document.querySelector(".months");
-
 const days = document.querySelector(".days");
-
 const hours = document.querySelector(".hours");
-
 const minutes = document.querySelector(".minutes");
-
 const second = document.querySelector(".seconds");
+let today = new Date();
+let nextyear = today.getFullYear() + 1;
+let newYear = new Date(nextyear, 0, 1);
+let diff = newYear - today;
+let m = 12 - today.getMonth() - 1;
+let d = Math.floor(diff / (1000 * 60 * 60 * 24));
+let h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+let min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+let s = Math.floor((diff % (1000 * 60)) / 1000);
 
-const date = new Date();
-
-console.log(date);
-// be back
+setInterval(() => {
+  let today = new Date();
+  let nextyear = today.getFullYear() + 1;
+  let newYear = new Date(nextyear, 0, 1);
+  let diff = newYear - today;
+  let m = 12 - today.getMonth() - 1;
+  let d = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let min = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let s = Math.floor((diff % (1000 * 60)) / 1000);
+  month.innerHTML = m;
+  days.innerHTML = d;
+  hours.innerHTML = h;
+  minutes.innerHTML = min;
+  second.innerHTML = s;
+}, 1000);
