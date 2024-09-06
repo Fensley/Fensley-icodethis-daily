@@ -12,10 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100% auto;
   color: white;
-}
-section {
 }
 .container {
   padding: 40px;
@@ -36,21 +34,21 @@ section {
   margin: 20px 0;
 }
 .review p {
-  background-color: #1d1c2c;
   padding: 10px 20px;
   color: rgb(211, 204, 204);
   transition: all 0.3s;
-  &:hover {
-    background-color: #8680f6;
-    color: white;
-    cursor: pointer;
-    border-radius: 3px;
-  }
+}
+.review p:hover {
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
 }
 .active {
-  background-color: #564fd8;
-  color: white;
+  background-color: #454366;
+  color: rgb(255, 255, 255);
 }
+/* background-color: #1d1c2c; */
+
 .forinput {
   border: 1px solid rgb(110, 110, 110);
   display: flex;
