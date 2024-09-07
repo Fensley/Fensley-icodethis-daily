@@ -1,1 +1,261 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #b0b4fd;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.top-ctn {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(85, 81, 81);
+  margin-bottom: 20px;
+}
+.top-text p {
+  cursor: pointer;
+}
+.Dashboard {
+  color: black;
+  font-size: 17px;
+}
+.top-text {
+  display: flex;
+  gap: 20px;
+}
+.plus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px;
+  background-color: #9d76ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(109, 45, 213, 0.15) 1.95px 2.95px 2.6px;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.too-data {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.fa-bell {
+  font-size: 25px;
+  cursor: pointer;
+  position: relative;
+  &::after {
+    content: "3";
+    font-size: 10px;
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    background-color: #9d76ff;
+    color: white;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+.profile-img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/*  */
+.first-row {
+  background-color: #f9f1df;
+  text-align: center;
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.bottom-ctn {
+  display: flex;
+  /* border: 1px solid; */
+  gap: 20px;
+}
+.second-row {
+  /* border: 1px solid; */
+
+  width: 65%;
+}
+.graph-ctn {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 13px;
+  height: 60%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.bar-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 35%;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 2px;
+}
+.too {
+  margin-bottom: 30px;
+}
+.btn-upgrade {
+  background-color: #9d76ff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.second-img {
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px;
+}
+.actualbar {
+  height: 10px;
+  /* width: 100%; */
+  margin-top: 10px;
+}
+.direct {
+  left: 13px;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: #7970ea;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: -15px;
+    top: 3px;
+    text-align: center;
+  }
+}
+.onex {
+  width: 30%;
+  font-size: 12px;
+}
+.social {
+  left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: #918cee;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: -15px;
+    top: 3px;
+    text-align: center;
+  }
+}
+.twoxx {
+  width: 40%;
+  font-size: 12px;
+}
+.organic {
+  position: relative;
+  left: 15px;
+  &::before {
+    content: "";
+    background-color: #ae90f1;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: -15px;
+    top: 3px;
+    text-align: center;
+  }
+}
+.threexxx {
+  width: 60%;
+  font-size: 12px;
+}
+.small,
+.meduim,
+.large {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.small {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #7970ea;
+}
+.meduim {
+  background-color: #918cee;
+}
+.large {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #ae90f1;
+}
+.fa-bars {
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 683px) {
+  .top-ctn {
+    justify-content: space-between;
+  }
+  body {
+    height: 100% auto;
+  }
+  section {
+    width: 80%;
+  }
+  .bottom-ctn {
+    flex-direction: column;
+  }
+  .das,
+  .pro,
+  .use {
+    display: none;
+  }
+  .plus {
+    padding: 8px;
+    font-size: 13px;
+  }
+  .first-row {
+    width: 100%;
+  }
+  .second-row {
+    width: 100%;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 25px;
+  }
+}
