@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   align-items: center;
@@ -94,12 +95,9 @@ body {
 }
 .bottom-ctn {
   display: flex;
-  /* border: 1px solid; */
   gap: 20px;
 }
 .second-row {
-  /* border: 1px solid; */
-
   width: 65%;
 }
 .graph-ctn {
