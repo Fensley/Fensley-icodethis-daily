@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #23232c;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+section {
+  background-color: #1c1c25;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: rgba(60, 54, 58, 0.4) 5px 5px, rgba(59, 52, 57, 0.3) 10px 10px,
+    rgba(64, 59, 62, 0.2) 15px 15px, rgba(57, 42, 51, 0.1) 20px 20px,
+    rgba(54, 51, 53, 0.05) 25px 25px;
+}
+.ctn-one {
+  float: right;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #0f0f12;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+h3 {
+  color: rgb(178, 176, 176);
+}
+.ctn-two {
+  text-align: center;
+  margin: 30px 0;
+}
+.ctn-two p {
+  max-width: 400px;
+  color: rgb(98, 98, 98);
+  margin: 15px;
+}
+.first-row {
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+  margin: 15px;
+}
+.first-row p {
+  background-color: #2a2a32;
+  height: 50px;
+  width: 150px;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.active {
+  transition: all 0.3s;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px;
+  /* soon to be toggle */
+  color: white;
+}
+.ctn-four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 10px;
+}
+.ctn-four button {
+  padding: 13px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn1 {
+  background-color: transparent;
+  border: 1px solid black;
+  color: gray;
+}
+.btn2 {
+  background-color: rgb(31, 193, 27);
+  color: white;
+  border: none;
+}
+.xstyle {
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+@media (max-width: 585px) {
+  .first-row {
+    flex-wrap: wrap;
+  }
+}
