@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #063f40;
+  color: #7d8a8c;
+  padding: 20px;
+}
+section {
+  /* come back to color */
+  background-color: #051a1b;
+  padding: 20px;
+}
+.firstcontainer {
+  display: flex;
+  height: 90vh;
+  border: 1px solid;
+}
+.forscreen {
+  border: 1px solid red;
+  height: 95%;
+}
+.right-first {
+  border: 1px solid yellow;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-left: 30%;
+}
+.right {
+  border: 1px solid green;
+  width: 100%;
+  margin: 20px;
+}
+.nowpart {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
