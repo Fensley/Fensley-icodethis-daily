@@ -24,20 +24,46 @@ section {
   border: 1px solid red;
   height: 95%;
 }
+/*  */
 .right-first {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   display: flex;
   width: 70%;
   justify-content: space-between;
   margin-left: 30%;
 }
 .right {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100%;
   margin: 20px;
 }
 .nowpart {
   display: flex;
-  gap: 20px;
+  /* gap: 8px; */
   font-size: 20px;
+  span {
+    padding: 4px 10px;
+  }
+}
+/* tuesday */
+.poplular-sect {
+  font-size: 16px;
+  font-family: monospace;
+  margin: 5px;
+  /* border: 1px solid beige; */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.menubtn {
+  font-size: 30px;
+}
+.now {
+  background-color: #073e3b;
+  color: #21ccc0;
+  border-radius: 30px;
+  padding: 4px 10px;
+}
+.popular {
+  color: #21ccc0;
 }
