@@ -53,7 +53,13 @@ body {
   padding: 5px 10px;
   border-radius: 10px;
 }
-.yearly {
+.testing {
+  transition: all 0.3s;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.yearlytwo {
+  transition: all 0.3s;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -83,9 +89,11 @@ button {
 
 @media (max-width: 733px) {
   body {
-    .split-ctn {
-      flex-direction: column;
-    }
+    height: fit-content;
+    padding: 20px 0;
+  }
+  .split-ctn {
+    flex-direction: column;
   }
   .top-ctn {
     gap: 20px;
