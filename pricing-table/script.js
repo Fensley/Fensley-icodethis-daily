@@ -1,3 +1,5 @@
+// toggle the monthly and the yearly
+
 const type = document.querySelectorAll(".active-y");
 const monthly = document.querySelector(".monthly");
 const yearly = document.querySelector(".yearly");
