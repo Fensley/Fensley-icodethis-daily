@@ -1,6 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 body {
+  font-family: monospace;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #1f1d44;
+}
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 300px;
+}
+.forgooglelogo {
+  display: flex;
+  background-color: #5b87e8;
+  width: fit-content;
+  gap: 30px;
+  padding: 6px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.googlelogo {
+  background-color: white;
+  width: 40px;
+  border-radius: 5px;
+}
+form {
+  /* border: 1px solid; */
+  width: 100%;
+}
+
+input {
+  display: flex;
+  width: 95%;
+  padding: 0px 5px;
+  margin: 5px 0;
+  /* outline: none; */
+  height: 40px;
+  border-radius: 2px;
+  border: 0.1px solid gray;
+}
+button {
+  margin: 20px 0;
+  width: 100%;
+  padding: 0px 5px;
+  height: 40px;
+  color: white;
+  background-color: #e65b7c;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+.forsignbar {
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 9px;
+}
+.bar {
+  background-color: gray;
+  width: 40px;
+  height: 1px;
 }
